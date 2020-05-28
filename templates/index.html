@@ -134,39 +134,39 @@
                   <form action="" class="tm-signup-form row">
                     <div class="form-group col-lg-4">
                       <label for="name">Sharpness:</label>
-                      <label for="name" class="form-control validate">{{ sharpness | truncatechars:13 }}</label>
+                      <label for="name" class="form-control validate">{% if sharpness.1 %}<b>{% endif %}{{ sharpness.0 | truncatechars:13 }}{% if sharpness.1 %}</b>{% endif %}</label>
                     </div>
                     <div class="form-group col-lg-4">
                       <label for="name">Complexity:</label>
-                      <label for="name" class="form-control validate">{{ complexity | truncatechars:13 }}</label>
+                      <label for="name" class="form-control validate">{% if complexity.1 %}<b>{% endif %}{{ complexity.0 | truncatechars:13 }}{% if complexity.1 %}</b>{% endif %}</label>
                     </div>
                     <div class="form-group col-lg-4">
                       <label for="name">Blob Number:</label>
-                      <label for="name" class="form-control validate">{{ blob_number | truncatechars:13}}</label>
+                      <label for="name" class="form-control validate">{% if blob_number.1 %}<b>{% endif %}{{ blob_number.0 | truncatechars:13 }}{% if blob_number.1 %}</b>{% endif %}</label>
                     </div>
                     <div class="form-group col-lg-4">
                       <label for="name">Blob Square:</label>
-                      <label for="name" class="form-control validate">{{ blob_square | truncatechars:13 }}</label>
+                      <label for="name" class="form-control validate">{% if blob_square.1 %}<b>{% endif %}{{ blob_square.0 | truncatechars:13 }}{% if blob_square.1 %}</b>{% endif %}</label>
                     </div>
                     <div class="form-group col-lg-4">
                       <label for="name">VCDR:</label>
-                      <label for="name" class="form-control validate">{{ vcdr | truncatechars:13 }}</label>
+                      <label for="name" class="form-control validate">{% if vcdr.1 %}<b>{% endif %}{{ vcdr.0 | truncatechars:13 }}{% if vcdr.1 %}</b>{% endif %}</label>
                     </div>
                     <div class="form-group col-lg-4">
                       <label for="name">Ratio:</label>
-                      <label for="name" class="form-control validate">{{ ratio | truncatechars:13 }}</label>
+                      <label for="name" class="form-control validate">{% if ratio.1 %}<b>{% endif %}{{ ratio.0 | truncatechars:13 }}{% if ratio.1 %}</b>{% endif %}</label>
                     </div> 
                     <div class="form-group col-lg-4">
                       <label for="name">Scale:</label>
-                      <label for="name" class="form-control validate">{{ scale | truncatechars:13}}</label>
+                      <label for="name" class="form-control validate">{% if scale.1 %}<b>{% endif %}{{ scale.0 | truncatechars:13 }}{% if scale.1 %}</b>{% endif %}</label>
                     </div>
                     <div class="form-group col-lg-4">
                       <label for="name">Curature:</label>
-                      <label for="name" class="form-control validate">{{ curature | truncatechars:13}}</label>
+                      <label for="name" class="form-control validate">{% if curature.1 %}<b>{% endif %}{{ curature.0 | truncatechars:13 }}{% if curature.1 %}</b>{% endif %}</label>
                     </div>
                     <div class="form-group col-lg-4">
                       <label for="name">Vein Lightness:</label>
-                      <label for="name" class="form-control validate">{{ vein_lightness | truncatechars:13 }}</label>
+                      <label for="name" class="form-control validate">{% if vein_lightness.1 %}<b>{% endif %}{{ vein_lightness.0 | truncatechars:13 }}{% if vein_lightness.1 %}</b>{% endif %}</label>
                     </div>
                   </form>
                 </div>

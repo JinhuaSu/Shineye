@@ -15,6 +15,12 @@ def dashboard(request):
 def products(request):
     context          = {}
     context['hello'] = 'Hello World!'
+    with open('statics/data/pred_dict.json') as f:
+        pred_dict = json.load(f)
+    with open('statics/data/feature_dict.json') as f:
+        feature_dict = json.load(f)
+    context.update(pred_dict)
+    context.update(feature_dict)
     return render(request, 'products.html', context)
 
 def accounts(request):
