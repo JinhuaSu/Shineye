@@ -215,14 +215,22 @@
             <div class="row tm-content-row">
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
                     <div class="tm-bg-primary-dark tm-block">
-                        <h2 class="tm-block-title">Latest Hits</h2>
+                        <h2 class="tm-block-title">Disease Ratio for different age</h2>
                         <canvas id="lineChart"></canvas>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+<!--                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
                     <div class="tm-bg-primary-dark tm-block">
                         <h2 class="tm-block-title">Performance</h2>
-                        <canvas id="barChart"></canvas>
+                        <canvas id="barChart"></canvas> tm-block-taller
+                    </div>
+                </div> -->
+                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
+                    <div class="tm-bg-primary-dark tm-block">
+                        <h2 class="tm-block-title">Male Disease Ratio</h2>
+                        <div id="pieChartContainer">
+                            <canvas id="pieChart" class="chartjs-render-monitor" width="200" height="200"></canvas>
+                        </div>                        
                     </div>
                 </div>
                 <div class="col-12 tm-block-col">
@@ -286,93 +294,6 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
-                    <div class="tm-bg-primary-dark tm-block tm-block-taller">
-                        <h2 class="tm-block-title">Storage Information</h2>
-                        <div id="pieChartContainer">
-                            <canvas id="pieChart" class="chartjs-render-monitor" width="200" height="200"></canvas>
-                        </div>                        
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-block-col">
-                    <div class="tm-bg-primary-dark tm-block tm-block-taller tm-block-overflow">
-                        <h2 class="tm-block-title">Notification List</h2>
-                        <div class="tm-notification-items">
-                            <div class="media tm-notification-item">
-                                <div class="tm-gray-circle"><img src="/static/img/notification-01.jpg" alt="Avatar Image" class="rounded-circle"></div>
-                                <div class="media-body">
-                                    <p class="mb-2"><b>Jessica</b> and <b>6 others</b> sent you new <a href="#"
-                                            class="tm-notification-link">product updates</a>. Check new orders.</p>
-                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
-                                </div>
-                            </div>
-                            <div class="media tm-notification-item">
-                                <div class="tm-gray-circle"><img src="/static/img/notification-02.jpg" alt="Avatar Image" class="rounded-circle"></div>
-                                <div class="media-body">
-                                    <p class="mb-2"><b>Oliver Too</b> and <b>6 others</b> sent you existing <a href="#"
-                                            class="tm-notification-link">product updates</a>. Read more reports.</p>
-                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
-                                </div>
-                            </div>
-                            <div class="media tm-notification-item">
-                                <div class="tm-gray-circle"><img src="/static/img/notification-03.jpg" alt="Avatar Image" class="rounded-circle"></div>
-                                <div class="media-body">
-                                    <p class="mb-2"><b>Victoria</b> and <b>6 others</b> sent you <a href="#"
-                                            class="tm-notification-link">order updates</a>. Read order information.</p>
-                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
-                                </div>
-                            </div>
-                            <div class="media tm-notification-item">
-                                <div class="tm-gray-circle"><img src="/static/img/notification-01.jpg" alt="Avatar Image" class="rounded-circle"></div>
-                                <div class="media-body">
-                                    <p class="mb-2"><b>Laura Cute</b> and <b>6 others</b> sent you <a href="#"
-                                            class="tm-notification-link">product records</a>.</p>
-                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
-                                </div>
-                            </div>
-                            <div class="media tm-notification-item">
-                                <div class="tm-gray-circle"><img src="/static/img/notification-02.jpg" alt="Avatar Image" class="rounded-circle"></div>
-                                <div class="media-body">
-                                    <p class="mb-2"><b>Samantha</b> and <b>6 others</b> sent you <a href="#"
-                                            class="tm-notification-link">order stuffs</a>.</p>
-                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
-                                </div>
-                            </div>
-                            <div class="media tm-notification-item">
-                                <div class="tm-gray-circle"><img src="/static/img/notification-03.jpg" alt="Avatar Image" class="rounded-circle"></div>
-                                <div class="media-body">
-                                    <p class="mb-2"><b>Sophie</b> and <b>6 others</b> sent you <a href="#"
-                                            class="tm-notification-link">product updates</a>.</p>
-                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
-                                </div>
-                            </div>
-                            <div class="media tm-notification-item">
-                                <div class="tm-gray-circle"><img src="/static/img/notification-01.jpg" alt="Avatar Image" class="rounded-circle"></div>
-                                <div class="media-body">
-                                    <p class="mb-2"><b>Lily A</b> and <b>6 others</b> sent you <a href="#"
-                                            class="tm-notification-link">product updates</a>.</p>
-                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
-                                </div>
-                            </div>
-                            <div class="media tm-notification-item">
-                                <div class="tm-gray-circle"><img src="/static/img/notification-02.jpg" alt="Avatar Image" class="rounded-circle"></div>
-                                <div class="media-body">
-                                    <p class="mb-2"><b>Amara</b> and <b>6 others</b> sent you <a href="#"
-                                            class="tm-notification-link">product updates</a>.</p>
-                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
-                                </div>
-                            </div>
-                            <div class="media tm-notification-item">
-                                <div class="tm-gray-circle"><img src="/static/img/notification-03.jpg" alt="Avatar Image" class="rounded-circle"></div>
-                                <div class="media-body">
-                                    <p class="mb-2"><b>Cinthela</b> and <b>6 others</b> sent you <a href="#"
-                                            class="tm-notification-link">product updates</a>.</p>
-                                    <span class="tm-small tm-text-color-secondary">6h ago.</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
              </div>
         </div>
         <footer class="tm-footer row tm-mt-small">
@@ -420,35 +341,48 @@
             configLine = {
               type: "line",
               data: {
-                labels: [
-                  "January",
-                  "February",
-                  "March",
-                  "April",
-                  "May",
-                  "June",
-                  "July"
-                ],
+                labels: ['正常', '糖尿病', '青光眼', '白内障', 'AMD', '高血压', '近视', '其他'],
                 datasets: [
                   {
-                    label: "Latest Hits",
-                    data: [88, 68, 79, 57, 50, 55, 70],
+                    label: "young([0,40])",
+                    data: [0.39035087719298206,
+  0.29824561403508804,
+  0.0482456140350877,
+  0.0263157894736842,
+  0.0263157894736842,
+  0.0175438596491228,
+  0.087719298245614,
+  0.21052631578947398],
                     fill: false,
                     borderColor: "rgb(75, 192, 192)",
                     cubicInterpolationMode: "monotone",
                     pointRadius: 0
                   },
                   {
-                    label: "Popular Hits",
-                    data: [33, 45, 37, 21, 55, 74, 69],
+                    label: "Middle([41,65])",
+                    data: [0.339046822742475,
+  0.355351170568562,
+  0.0451505016722408,
+  0.0380434782608696,
+  0.0409698996655518,
+  0.0367892976588629,
+  0.0376254180602007,
+  0.278010033444816],
                     fill: false,
                     borderColor: "rgba(255,99,132,1)",
                     cubicInterpolationMode: "monotone",
                     pointRadius: 0
                   },
                   {
-                    label: "Featured",
-                    data: [44, 19, 38, 46, 85, 66, 79],
+                    label: "Old([66,))",
+                    data: [0.272727272727273,
+  0.23863636363636398,
+  0.10909090909090899,
+  0.130681818181818,
+  0.0681818181818182,
+  0.0125,
+  0.0727272727272727,
+  0.302272727272727],
                     fill: false,
                     borderColor: "rgba(153, 102, 255, 1)",
                     cubicInterpolationMode: "monotone",
@@ -463,69 +397,69 @@
           }
         }
 
-        function drawBarChart() {
-          if ($("#barChart").length) {
-            ctxBar = document.getElementById("barChart").getContext("2d");
+//         function drawBarChart() {
+//           if ($("#barChart").length) {
+//             ctxBar = document.getElementById("barChart").getContext("2d");
 
-            optionsBar = {
-              responsive: true,
-              scales: {
-                yAxes: [
-                  {
-                    barPercentage: 0.2,
-                    ticks: {
-                      beginAtZero: true
-                    },
-                    scaleLabel: {
-                      display: true,
-                      labelString: "Hits"
-                    }
-                  }
-                ]
-              }
-            };
+//             optionsBar = {
+//               responsive: true,
+//               scales: {
+//                 yAxes: [
+//                   {
+//                     barPercentage: 0.2,
+//                     ticks: {
+//                       beginAtZero: true
+//                     },
+//                     scaleLabel: {
+//                       display: true,
+//                       labelString: "Hits"
+//                     }
+//                   }
+//                 ]
+//               }
+//             };
 
-            optionsBar.maintainAspectRatio =
-              $(window).width() < width_threshold ? false : true;
+//             optionsBar.maintainAspectRatio =
+//               $(window).width() < width_threshold ? false : true;
 
-            /**
-             * COLOR CODES
-             * Red: #F7604D
-             * Aqua: #4ED6B8
-             * Green: #A8D582
-             * Yellow: #D7D768
-             * Purple: #9D66CC
-             * Orange: #DB9C3F
-             * Blue: #3889FC
-             */
+//             /**
+//              * COLOR CODES
+//              * Red: #F7604D
+//              * Aqua: #4ED6B8
+//              * Green: #A8D582
+//              * Yellow: #D7D768
+//              * Purple: #9D66CC
+//              * Orange: #DB9C3F
+//              * Blue: #3889FC
+//              */
 
-            configBar = {
-              type: "horizontalBar",
-              data: {
-                labels: ["Red", "Aqua", "Green", "Yellow", "Purple", "Orange", "Blue"],
-                datasets: [
-                  {
-                    label: "# of Hits",
-                    data: [33, 40, 28, 49, 58, 38, 44],
-                    backgroundColor: [
-                      "#F7604D",
-                      "#4ED6B8",
-                      "#A8D582",
-                      "#D7D768",
-                      "#9D66CC",
-                      "#DB9C3F",
-                      "#3889FC"
-                    ],
-                    borderWidth: 0
-                  }
-                ]
-              },
-              options: optionsBar
-            };
+//             configBar = {
+//               type: "horizontalBar",
+//               data: {
+//                 labels: ["Red", "Aqua", "Green", "Yellow", "Purple", "Orange", "Blue"],
+//                 datasets: [
+//                   {
+//                     label: "# of Hits",
+//                     data: [33, 40, 28, 49, 58, 38, 44],
+//                     backgroundColor: [
+//                       "#F7604D",
+//                       "#4ED6B8",
+//                       "#A8D582",
+//                       "#D7D768",
+//                       "#9D66CC",
+//                       "#DB9C3F",
+//                       "#3889FC"
+//                     ],
+//                     borderWidth: 0
+//                   }
+//                 ]
+//               },
+//               options: optionsBar
+//             };
 
-            barChart = new Chart(ctxBar, configBar);
-          }
-        }
+//             barChart = new Chart(ctxBar, configBar);
+//           }
+//         }
 
         function drawPieChart() {
           if ($("#pieChart").length) {
@@ -556,16 +490,19 @@
               data: {
                 datasets: [
                   {
-                    data: [18.24, 6.5, 9.15],
-                    backgroundColor: ["#F7604D", "#4ED6B8", "#A8D582"],
-                    label: "Storage"
+                    data: [0.34111405835543795,
+  0.3342175066313,
+  0.0663129973474801,
+  0.0472148541114058,
+  0.046684350132626,
+  0.0344827586206897,
+  0.0339522546419098,
+  0.26472148541114104],
+                    backgroundColor: ["#F7604D", "#4ED6B8", "#A8D582","#376F6D", "#9E46B8", "#E825A2","#57D04D", "#7E2638"],
+                    label: "Male disease ratio"
                   }
                 ],
-                labels: [
-                  "Used Storage (18.240GB)",
-                  "System Storage (6.500GB)",
-                  "Available Storage (9.150GB)"
-                ]
+                labels: ['正常', '糖尿病', '青光眼', '白内障', 'AMD', '高血压', '近视', '其他']
               },
               options: optionsPie
             };
@@ -581,12 +518,12 @@
           }
         }
 
-        function updateBarChart() {
-          if (barChart) {
-            barChart.options = optionsBar;
-            barChart.update();
-          }
-        }
+//         function updateBarChart() {
+//           if (barChart) {
+//             barChart.options = optionsBar;
+//             barChart.update();
+//           }
+//         }
 
     </script> 
     <script>
@@ -600,17 +537,18 @@
             configLine,
             configBar,
             configPie,
-            lineChart;
-        barChart, pieChart;
+            lineChart,
+            pieChart;
+        //barChart,
         // DOM is ready
         $(function () {
             drawLineChart(); // Line Chart
-            drawBarChart(); // Bar Chart
+//             drawBarChart(); // Bar Chart
             drawPieChart(); // Pie Chart
 
             $(window).resize(function () {
                 updateLineChart();
-                updateBarChart();                
+//                 updateBarChart();                
             });
         })
     </script>

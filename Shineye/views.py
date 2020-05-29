@@ -8,8 +8,14 @@ def dashboard(request):
         texture_dict = json.load(f)
     with open('statics/data/feature_dict.json') as f:
         feature_dict = json.load(f)
+    with open('statics/data/line_dict.json') as f:
+        line_dict = json.load(f)
+    with open('statics/data/pie_dict.json') as f:
+        pie_dict = json.load(f)
     context['texture_dict'] = texture_dict
     context.update(feature_dict)
+    context.update(line_dict)
+    context.update(pie_dict)
     return render(request, 'index.html', context)
 
 def products(request):
